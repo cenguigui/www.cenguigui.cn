@@ -1,0 +1,109 @@
+/* 样式 */
+:root {
+	/*播放器页面背景颜色*/
+	--player_bg: linear-gradient(to right, rgb(247, 209, 215), rgb(191, 227, 241));
+}
+
+*{
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	font-family: '楷体';
+}
+
+body {
+	font: bold 15px / 2rem 楷体, 楷体_GB2312;
+	background-attachment: fixed;
+	background-size: cover;
+	background-image: var(--player_bg);
+	overflow-x: hidden;
+}
+
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/ 
+::-webkit-scrollbar {
+    width: 8px;
+    height: 6px
+}
+/*定义滚动条轨道*/ 
+::-webkit-scrollbar-track {
+    background-color: transparent;
+    -webkit-border-radius: 2em;
+    -moz-border-radius: 2em;
+    border-radius: 2em
+}
+/*定义滑块 内阴影+圆角*/ 
+::-webkit-scrollbar-thumb {
+    background-color: #e9c5cb;
+    background-image: -webkit-linear-gradient(45deg,rgba(255,255,255,.4) 100%,transparent 100%,transparent 50%,rgba(255,255,255,.4) 50%,rgba(255,255,255,.4) 75%,transparent 75%,transparent);
+    -webkit-border-radius: 2em;
+    -moz-border-radius: 2em;
+    border-radius: 2em
+}
+
+
+/*弹窗样式*/
+.swal-overlay--show-modal .swal-modal {
+	opacity: 1;
+	pointer-events: auto;
+	box-sizing: border-box;
+	-webkit-animation: showSweetAlert .3s;
+	animation: showSweetAlert .3s;
+	will-change: transform;
+	/* background-image: var(--player_bg); */
+	background: url('../images/bg.png');
+	background-size: cover;
+	box-shadow:inset  10px 10px 500px 50px  rgb(247, 209, 215);
+	
+}
+
+.swal-title,
+.swal-text{
+	color: #000000;
+}
+
+.swal-button {
+	background-color: #f0abff;
+	color: #fff;
+	border: none;
+	box-shadow: none;
+	border-radius: 5px;
+	font-weight: 600;
+	font-size: 14px;
+	padding: 10px 24px;
+	margin: 0;
+	cursor: pointer;
+}
+
+/*首页倒计时*/
+.gn_box {
+	border: none;
+	border-radius: 15px;
+}
+
+.gn_box {
+	padding: 10px 14px;
+	margin: 10px;
+	margin-bottom: 20px;
+	text-align: center;
+	background-color: #fff;
+}
+
+#t_d {
+	color: #982585;
+	font-size: 18px;
+}
+
+#t_h {
+	color: #8f79c1;
+	font-size: 18px;
+}
+
+#t_m {
+	color: #65b4b5;
+	font-size: 18px;
+}
+
+#t_s {
+	color: #83caa3;
+	font-size: 18px;
+}

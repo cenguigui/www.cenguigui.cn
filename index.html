@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<meta name="viewport"
+			content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>笒鬼鬼</title>
+		<link rel="stylesheet" href="./css/index.css">
+	</head>
+	<body>
+		<center>
+			<p><img src="./images/pl.png" width="300xp" height="450xp"></p>
+			<h3>
+				<p>
+					<font color="#5F9F9F">唔，人家已经跑路了啦～</font><br>
+					<font color="#BA0045">很遗憾以这种方式跟你们见面～</font><br>
+					<font color="#5E00A1">您们可以把俺的友链删除了～</font>
+				</p>
+			</h3>
+			<br>
+			<a href="https://work.weixin.qq.com/kfid/kfc240c6d70d344aa46?FromMpMsg=1&MpAppId=wxcf7463f39538ffca">
+				<h3>
+					<p>
+						<font color="#E80017">☛联系笒鬼鬼</font>
+					</p>
+				</h3>
+			</a>
+			<div class="gn_box">
+					<h3 style="font: bold 25px / 2rem 楷体, 楷体_GB2312;">
+						<font color=#E80017>2</font>
+						<font color=#D1002E>0</font>
+						<font color=#BA0045>2</font>
+						<font color=#A3005C>3</font>
+						<font color=#8C0073>年</font>
+						<font color=#5E00A1>7</font>
+						<font color=#4700B8>月</font>
+						<font color=#3000CF>31</font>
+						<font color=#3000CF>日</font>
+						<font color=#1900E6>跑</font>
+						<font color=#0200FD>路</font>
+					</h3>
+					<center>
+						<div id="CountMsg" class="HotDate"><span id="t_d"> 天</span><span id="t_h"> 时</span><span id="t_m">
+								分</span><span id="t_s"> 秒</span></div>
+					</center>
+					<script type="text/javascript">
+						function getRTime() {
+							var EndTime = new Date('2023/07/31 12:22:00');
+							var NowTime = new Date();
+							var t = EndTime.getTime() - NowTime.getTime();
+							var d = Math.floor(t / 1000 / 60 / 60 / 24);
+							var h = Math.floor(t / 1000 / 60 / 60 % 24);
+							var m = Math.floor(t / 1000 / 60 % 60);
+							var s = Math.floor(t / 1000 % 60);
+							var day = document.getElementById("t_d");
+							if (day != null) {
+								day.innerHTML = d + " 天";
+							}
+							var hour = document.getElementById("t_h");
+							if (hour != null) {
+								hour.innerHTML = h + " 时";
+							}
+							var min = document.getElementById("t_m");
+							if (min != null) {
+								min.innerHTML = m + " 分";
+							}
+							var sec = document.getElementById("t_s");
+							if (sec != null) {
+								sec.innerHTML = s + " 秒";
+							}
+						}
+						setInterval(getRTime, 1000);
+					</script>
+				</div>
+				</p>
+			</div>
+		</center>
+		<script src="https://cdn.staticfile.org/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://npm.elemecdn.com/sweetalert/dist/sweetalert.min.js"></script>
+		<!-- 页面蕾姆喝猫猫 -->
+		<script src="./js/leimu.js"></script>
+		<!-- 雪花 -->
+		<script src="./js/xuehua.js" rel="external nofollow"></script>
+		<script>
+			//弹窗
+			swal({
+				title: '· 笒鬼鬼(跑路了) ·',
+				text: '很抱歉各位已这种方式和您们相遇！\n以后就没有www.cenguigui.cn博客了 俺就这样退网了，很抱歉各位！\n域名为cenguigui.cn的所以网站均已关闭\n作者：笒鬼鬼\n邮箱：cenguigui@qq.com'
+			});
+			//定义雪花颜色
+			var sf = new Snowflakes({
+				color: "#e9c5cb"
+			});
+		</script>
+		
+		
+	</body>
+	
+</html>
