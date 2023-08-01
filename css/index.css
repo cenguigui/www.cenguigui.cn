@@ -50,7 +50,7 @@ body {
 	animation: showSweetAlert .3s;
 	will-change: transform;
 	/* background-image: var(--player_bg); */
-	background: url('../images/bg.png');
+	background: url('https://pic8.58cdn.com.cn/nowater/webim/big/n_v23fadc4fee4f2481fbc9b6de43ce931c2.png');
 	background-size: cover;
 	box-shadow:inset  10px 10px 500px 50px  rgb(247, 209, 215);
 	
